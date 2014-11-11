@@ -10,18 +10,18 @@
 
     <dependencies>
         <!--Works-->
-        <dependency>
-            <groupId>com.datastax.cassandra</groupId>
-            <artifactId>cassandra-driver-mapping</artifactId>
-            <version>2.1.1</version>
-        </dependency>
-
-        <!--Doesn't work-->
         <!--<dependency>-->
             <!--<groupId>com.datastax.cassandra</groupId>-->
             <!--<artifactId>cassandra-driver-mapping</artifactId>-->
             <!--<version>2.1.1</version>-->
         <!--</dependency>-->
+
+        <!--Doesn't work-->
+        <dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-mapping</artifactId>
+            <version>2.1.2</version>
+        </dependency>
     </dependencies>
 
 </project>

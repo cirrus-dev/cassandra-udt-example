@@ -8,7 +8,8 @@ import java.util.Date;
 
 public class UDTSpike {
     public static void main(String[] args) throws Exception {
-        try (Cluster cluster = Cluster.builder().addContactPoint("192.168.10.10").build(); Session umvKeyspace = cluster.connect("umv")) {
+
+        try (Cluster cluster = Cluster.builder().withProtocolVersion(ProtocolVersion.V3).addContactPoint("localhost").build(); Session umvKeyspace = cluster.connect("umv")) {
 
             UDTMapper<Entitlement> mapper = new MappingManager(umvKeyspace).udtMapper(Entitlement.class);
 
